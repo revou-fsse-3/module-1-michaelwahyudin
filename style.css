@@ -191,7 +191,3 @@ input[type="password"] {
 input[type="password"] {
   margin-bottom: 20px;
 }
-
-@media (max-width: 768px) {
-  /* Styles for screens up to 768px wide (common for smartphones) */
-}
