@@ -59,10 +59,15 @@ body {
 
 /* Center the <h1> element without stretching the links */
 h1 {
-  font-size: 20px;
+ 
   margin: 0;
   margin-left: auto; /* Push <h1> to the right */
   margin-right: auto; /* Push <h1> to the left */
+  font-weight: bold; /* Make the text bold */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
+  font-size: 24px; /* Increase the font size */
+  color: #ffffff; /* Set the text color */
+  text-transform: uppercase; /* Convert text to uppercase */
 }
 
 .topnav a:hover {
@@ -107,6 +112,7 @@ button.btn {
   border-radius: 15px;
   font-size: 16px;
   cursor: pointer;
+  margin-top: 15px;
 }
 
 .centered-form {
@@ -143,7 +149,7 @@ label {
 }
 
 input[type="checkbox"] {
-  margin-right: 10px; /* Adjust the spacing between checkbox and label as needed */
+  margin: 0; /* Reset margin */
   transform: scale(1.5); /* Make the checkboxes larger */
   vertical-align: middle; /* Align checkboxes with the text */
 }
@@ -162,3 +168,26 @@ input[type="radio"] {
 }
 
 /* Style for the centered text content */
+
+label {
+  display: inline-block; /* Make labels display in a line */
+  font-weight: bold;
+  margin-right: 10px; /* Add some spacing between labels (adjust as needed) */
+}
+
+input[type="radio"] {
+  margin: 0; /* Reset margin */
+  transform: scale(1.5); /* Make the radio buttons larger */
+  vertical-align: middle; /* Align radio buttons with the text */
+}
+input[id="username"],
+input[type="password"] {
+  width: 100%; /* Make the inputs take up the full width */
+  padding: 8px; /* Adjust the padding as needed */
+  margin-bottom: 10px; /* Add spacing between inputs */
+}
+
+/* Add more spacing to the last input */
+input[type="password"] {
+  margin-bottom: 20px;
+}
