@@ -6,6 +6,4 @@ _This is me_, visit my [Linkedin](https://www.linkedin.com/in/michael-wahyudin-9
 
 [def]: https://media.licdn.com/dms/image/C4E03AQEqHcvQ5UQ73Q/profile-displayphoto-shrink_800_800/0/1640710136892?e=1703116800&v=beta&t=ma8T5rqPhrpxIjyQFAqs_Ak5oflwQRYD9uNsmdBCVF0
 
-**please enjoy this noodle** ![miebabi](./asset/mie.jpg)
-
-Bye
+**This is my Checklist as Requested** ![Checklist](./asset/check.jpg)

@@ -1,59 +1,64 @@
+<!DOCTYPE html>
 <html>
-
 <head>
-    <title>Jo-Jo
-    </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
-
 <body>
-    <h1>Jo-Jo Bizarre Adventure</h1>
+    <div class="background">
+        <header>
+        <div class="topnav">
+            <a class="active" href="#index.html">Home</a>
+            <a href="https://github.com/revou-fsse-3/module-1-michaelwahyudin">About</a>
+            <a href="#contact">Contact</a>
+            <input type="text" placeholder="Search..">
+        </header>
+        </div>
+        <main>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <img src="./asset/1.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./asset/2.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./asset/3.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./asset/4.jpg" style="width:100%">
+            </div>
+            <div class="mySlides fade">
+                <img src="./asset/5.jpg" style="width:100%">
+            </div>
+        </div>
+        <section>
+        <div class="white-box">
+            <div class="centered-form">
 
-    <section>
-        <h2>ZA WARUDO!!</h2>
-        <div class="gallery">
-            <img src="./asset/dio.gif" alt="zawarudo!!" class="responsive">
-            <img src="https://steamuserimages-a.akamaihd.net/ugc/946212227072984321/21E60C9EA58AC7134628026FCFCD7C735B48E1FE/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false"
-                alt="DIO!!" class="responsive">
-            <h3>MUDAMUDAMUDAMUDA
-            </h3>
-    </section>
-
-    <section>
-        <h2>STAR PLATINUM!!</h2>
-        <div class="gallery">
-            <img src="./asset/oraora.gif" alt="oraoraora!!" class="responsive">
-            <img src="./asset/jojo.jpg" alt="yareyare" class="responsive">
-            <h3>ORAORAORAORA</h3>
-            <p>this is jojo fanweb</p>
-            <p><a href="https://jojowiki.com/">Visit our wiki</a></p>
-    </section>
-
-    <h2>An Unordered Stand User</h2>
-
-    <ul>
-        <ul class="a">
-            <li>Joseph Joestar</li>
-            <li>Dio</li>
-            <li>Jotaro Kujo</li>
-        </ul>
-
-        <h2>An Ordered Stand</h2>
-
-        <ol>
-            <li>Star Platinum</li>
-            <li>Hermit Purple</li>
-            <li>Za Wārudo</li>
-        </ol>
-<button>Click me!!</button>
-<script src="script.js"></script>
-        <link rel="stylesheet" href="style.css">
-
-
-
-
-
-
-
+                <form id="login-form">
+                    <label for="username">Enter ID:</label>
+                    <input type="text" id="username" name="username" placeholder="Username" required>
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" placeholder="Password" required>
+                    <!-- Checkboxes -->
+                    <label for="checkbox1">I have read and agree to the terms of  <a href="https://policies.google.com/terms?hl=en-US">service</a>.</label>
+                    <input type="checkbox" id="checkbox1" name="option1" value="option1">
+                    <!-- Text area -->
+                    <label for="comments">Comments:</label>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your comments here..." required></textarea>
+                    <label>User Type:</label>
+                    <input type="radio" id="user1" name="User Type" value="user1">
+                    <label for="user1">I am an user</label>
+                    <input type="radio" id="creator" name="User Type" value="creator">
+                    <label for="creator">I am a creator</label>
+                    <button class="btn">Register</button>
+                    <button class="btn">Login</button>
+                </form>
+            </div>
+        </section>
+        </main>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
-
 </html>
