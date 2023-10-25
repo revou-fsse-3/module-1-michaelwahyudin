@@ -47,6 +47,8 @@ body {
   display: flex;
   align-items: center;
   height: 50px; /* Set the desired height of the topnav bar */
+  position: sticky;
+  top: 0; /* Keep the header at the top when scrolling */
 }
 
 .topnav a {
