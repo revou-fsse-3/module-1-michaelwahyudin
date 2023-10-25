@@ -61,7 +61,6 @@ body {
 
 /* Center the <h1> element without stretching the links */
 h1 {
- 
   margin: 0;
   margin-left: auto; /* Push <h1> to the right */
   margin-right: auto; /* Push <h1> to the left */
@@ -205,5 +204,41 @@ input[type="password"] {
   }
   .white-box {
     max-width: 100%; /* Adjust the value as needed */
+  }
+  .topnav {
+    height: auto; /* Allow the header to adjust its height as needed */
+  }
+
+  .topnav a,
+  .topnav input[type="text"] {
+    padding: 10px 0; /* Increase the padding for better touch control on smaller screens */
+    text-align: center;
+    width: 100%;
+  }
+
+  .topnav input[type="text"] {
+    margin-top: 0; /* Remove top margin */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  button.btn {
+    padding: 10px 20px;
+    margin-top: 10px; /* Increase the margin top for better spacing on smaller screens */
+  }
+
+  .centered-form,
+  .white-box {
+    padding: 10px; /* Reduce the padding for better screen utilization on smaller screens */
+  }
+
+  label {
+    font-size: 14px; /* Reduce font size for better readability on smaller screens */
+  }
+
+  input[id="username"],
+  input[type="password"],
+  textarea {
+    padding: 8px;
+    margin-bottom: 8px; /* Adjust input margin for better spacing on smaller screens */
   }
 }
