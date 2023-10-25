@@ -19,12 +19,6 @@ body {
 }
 
 /* Add additional styles for your content, such as text and other elements */
-h1 {
-  text-align: center;
-  font-size: 36px;
-  padding-top: 20%;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -50,16 +44,25 @@ body {
 .topnav {
   overflow: hidden;
   background-color: #74b4df;
+  display: flex;
+  align-items: center;
+  height: 50px; /* Set the desired height of the topnav bar */
 }
 
 .topnav a {
-  float: left;
-  display: block;
   color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
   font-size: 17px;
+}
+
+/* Center the <h1> element without stretching the links */
+h1 {
+  font-size: 20px;
+  margin: 0;
+  margin-left: auto; /* Push <h1> to the right */
+  margin-right: auto; /* Push <h1> to the left */
 }
 
 .topnav a:hover {
@@ -73,13 +76,11 @@ body {
 }
 
 .topnav input[type="text"] {
-  float: right;
   padding: 6px;
   margin-top: 8px;
   margin-right: 16px;
   border: none;
   font-size: 17px;
-  display: flex;
 }
 
 @media screen and (max-width: 600px) {
@@ -159,3 +160,5 @@ input[type="radio"] {
   transform: scale(1.5); /* Make the radio buttons larger */
   vertical-align: middle; /* Align radio buttons with the text */
 }
+
+/* Style for the centered text content */
