@@ -192,6 +192,16 @@ input[type="password"] {
   margin-bottom: 20px;
 }
 
+/* Phone Styles */
 @media (max-width: 768px) {
-  /* Styles for screens up to 768px wide (common for smartphones) */
+  body {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+  .background {
+    max-width: 100%; /* Adjust the value as needed */
+  }
+  .white-box {
+    max-width: 100%; /* Adjust the value as needed */
+  }
 }
