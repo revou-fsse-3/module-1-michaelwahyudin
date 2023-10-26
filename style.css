@@ -51,12 +51,16 @@ body {
   top: 0; /* Keep the header at the top when scrolling */
   animation-name: example;
   animation-duration: 10s;
-  animation-iteration-count: infinite
+  animation-iteration-count: infinite;
 }
 
 @keyframes example {
-  from {background-color: lightgrey;}
-  to {background-color: lightblue;}
+  from {
+    background-color: lightgrey;
+  }
+  to {
+    background-color: lightblue;
+  }
 }
 
 .topnav a {
@@ -276,7 +280,7 @@ input[type="password"] {
     .topnav.responsive {
       height: auto;
     }
-  
+
     .topnav.responsive a {
       display: block;
       text-align: left;
@@ -292,14 +296,14 @@ input[type="password"] {
     background-color: #333; /* Style the background */
     padding: 10px; /* Add some padding for better spacing */
   }
-  
+
   .hamburger-content a {
     display: block;
     color: #fff; /* Set the text color */
     text-decoration: none;
     margin: 8px 0; /* Add spacing between links */
   }
-  
+
   /* Show the content on smaller screens using media queries */
   @media screen and (max-width: 600px) {
     .hamburger-content {
@@ -307,12 +311,10 @@ input[type="password"] {
     }
   }
 
-
-/* Media query to hide the links when the hamburger menu is visible */
-@media screen and (max-width: 600px) {
-  .topnav a {
-    display: none;
+  /* Media query to hide the links when the hamburger menu is visible */
+  @media screen and (max-width: 600px) {
+    .topnav a {
+      display: none;
+    }
   }
-}
-
 }
