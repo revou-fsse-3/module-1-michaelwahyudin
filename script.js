@@ -18,9 +18,10 @@ const button = document.querySelector("button");
 button.addEventListener("click", onButtonClick);
 
 function onButtonClick() {
-  alert(`Error 404`);
+  alert(`This is a test!`);
 }
 
+/* burger section */
 const hamburgerMenu = document.getElementById("hamburger-menu");
 const hamburgerContent = document.querySelector(".hamburger-content");
 
