@@ -20,3 +20,18 @@ button.addEventListener("click", onButtonClick);
 function onButtonClick() {
   alert(`Error 404`);
 }
+
+const hamburgerMenu = document.getElementById("hamburger-menu");
+const hamburgerContent = document.querySelector(".hamburger-content");
+
+let isOpen = false; // Variable to track the state of the hamburger menu
+
+hamburgerMenu.addEventListener("click", () => {
+  isOpen = !isOpen; // Toggle the state
+
+  if (isOpen) {
+    hamburgerContent.classList.add("show"); // Add the "show" class to display the content
+  } else {
+    hamburgerContent.classList.remove("show"); // Remove the "show" class to hide the content
+  }
+});
