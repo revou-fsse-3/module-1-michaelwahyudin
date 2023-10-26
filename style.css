@@ -145,6 +145,7 @@ input[id="username"], input[type="password"] {
   body {
     font-size: 14px;
     line-height: 1.4;
+    background-color: #2196f3;
   }
 
   .background, .white-box {
@@ -226,4 +227,18 @@ input[id="username"], input[type="password"] {
       display: none;
     }
   }
+
+  @media screen and (max-width: 600px) {
+    .footer {
+      background-color: #2196f3;
+      text-align: center;
+      padding: 10px;
+      font-weight: bold;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+      font-size: 24px;
+      color: #f80101;
+      text-transform: uppercase;
+      padding-top: 60%;
+    }}
+
 }
