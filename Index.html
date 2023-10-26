@@ -72,18 +72,9 @@
                   required
                 />
                 <!-- Checkboxes -->
-                <label for="checkbox1"
-                  >I have read and agree to the terms of
-                  <a href="https://policies.google.com/terms?hl=en-US"
-                    >service</a
-                  >.</label
-                >
-                <input
-                  type="checkbox"
-                  id="checkbox1"
-                  name="option1"
-                  value="option1"
-                />
+                <label for="checkbox1">I have read and agree to the terms of <a href="https://policies.google.com/terms?hl=en-US">service</a>.</label>
+                <input type="checkbox" id="checkbox1" name="option1" value="option1" />
+
                 <!-- Text area -->
                 <label for="comments">Comments:</label>
                 <textarea
@@ -94,15 +85,22 @@
                   placeholder="Write your comments here..."
                   required
                 ></textarea>
-                <label>User Type:</label>
-                <input type="radio" id="user1" name="User Type" value="user1" />
-                <label for="user1">I am an user</label>
-                <input
-                  type="radio"
-                  id="creator"
-                  name="User Type"
-                  value="creator"
-                />
+                
+                <fieldset>
+                  <legend>User Type:</legend>
+                  <div class="radio-group">
+                    <input type="radio" id="user1" name="User Type" value="user1" />
+                    <label for="user1">I am an user</label>
+                  </div>
+                
+                  <div class="radio-group">
+                    <input type="radio" id="creator" name="User Type" value="creator" />
+                    <label for="creator">I am a creator</label>
+                  </div>
+                </fieldset>
+                
+                
+                
                 <label for="creator">I am a creator</label>
                 <button class="btn">Register</button>
                 <button class="btn">Login</button>

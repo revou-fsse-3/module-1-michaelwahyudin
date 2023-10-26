@@ -5,53 +5,25 @@ body {
   overflow: hidden; /* Prevent horizontal scrollbars */
 }
 
-.background {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
-  transition-duration: 1s;
-  transition-timing-function: ease; /* Keeps the background fixed as the page scrolls */
-}
-
-/* Add additional styles for your content, such as text and other elements */
-* {
-  box-sizing: border-box;
-}
-body {
-  font-family: Verdana, sans-serif;
-}
-.mySlides {
-  display: none;
-}
-img {
-  vertical-align: middle;
-}
-
+/* Shared styles for various elements */
 * {
   box-sizing: border-box;
 }
 
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Top navigation bar styles */
 .topnav {
   overflow: hidden;
   background-color: #74b4df;
   display: flex;
   align-items: center;
-  height: 50px; /* Set the desired height of the topnav bar */
+  height: 50px;
   position: sticky;
-  top: 0; /* Keep the header at the top when scrolling */
-  animation-name: example;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
+  top: 0;
+  animation: example 10s infinite;
 }
 
 @keyframes example {
@@ -71,16 +43,13 @@ body {
   font-size: 17px;
 }
 
-/* Center the <h1> element without stretching the links */
 h1 {
-  margin: 0;
-  margin-left: auto; /* Push <h1> to the right */
-  margin-right: auto; /* Push <h1> to the left */
-  font-weight: bold; /* Make the text bold */
-  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Add a text shadow */
-  font-size: 24px; /* Increase the font size */
-  color: #ffffff; /* Set the text color */
-  text-transform: uppercase; /* Convert text to uppercase */
+  margin: 0 auto;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 24px;
+  color: #ffffff;
+  text-transform: uppercase;
 }
 
 .topnav a:hover {
@@ -101,14 +70,13 @@ h1 {
   font-size: 17px;
 }
 
+/* Responsive styles for smaller screens */
 @media screen and (max-width: 600px) {
-  .topnav a,
-  .topnav input[type="text"] {
+  .topnav a, .topnav input[type="text"] {
     float: none;
     display: block;
     text-align: left;
     width: 100%;
-    margin: 0;
     padding: 14px;
   }
 
@@ -117,6 +85,7 @@ h1 {
   }
 }
 
+/* Button styles */
 button.btn {
   background-color: #333;
   color: #fff;
@@ -128,82 +97,48 @@ button.btn {
   margin-top: 15px;
 }
 
-.centered-form {
+/* Centered form styles */
+.centered-form, .white-box {
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgba(
-    255,
-    255,
-    255,
-    0.8
-  ); /* Optional: Add a background color to the form container */
+  background-color: rgba(255, 255, 255, 0.8);
   padding: 20px;
   border-radius: 10px;
   text-align: center;
   display: flex;
 }
 
-.white-box {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: rgba(255, 255, 255, 0.8); /* White box with transparency */
-  padding: 20px;
-  border-radius: 10px;
-}
-
-/* Style for checkboxes and labels */
+/* Checkbox and radio button styles */
 label {
-  display: block;
   font-weight: bold;
 }
 
-input[type="checkbox"] {
-  margin: 0; /* Reset margin */
-  transform: scale(1.5); /* Make the checkboxes larger */
-  vertical-align: middle; /* Align checkboxes with the text */
+input[type="checkbox"], input[type="radio"] {
+  margin: 0;
+  transform: scale(1.5);
+  vertical-align: middle;
 }
 
-/* Style for radio buttons and labels */
-label {
-  display: block;
-  font-weight: bold;
-  margin-top: 10px; /* Add some spacing between labels */
+/* Input and textarea styles */
+input[id="username"], input[type="password"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
 }
 
-input[type="radio"] {
-  margin-right: 10px; /* Adjust the spacing between radio button and label as needed */
-  transform: scale(1.5); /* Make the radio buttons larger */
-  vertical-align: middle; /* Align radio buttons with the text */
+/* Add spacing between radio buttons and labels */
+.radio-group {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Adjust the spacing as needed */
 }
 
-/* Style for the centered text content */
-
-label {
-  display: inline-block; /* Make labels display in a line */
-  font-weight: bold;
-  margin-right: 10px; /* Add some spacing between labels (adjust as needed) */
+.radio-group input[type="radio"] {
+  margin-right: 10px; /* Adjust the spacing as needed */
 }
 
-input[type="radio"] {
-  margin: 0; /* Reset margin */
-  transform: scale(1.5); /* Make the radio buttons larger */
-  vertical-align: middle; /* Align radio buttons with the text */
-}
-input[id="username"],
-input[type="password"] {
-  width: 100%; /* Make the inputs take up the full width */
-  padding: 8px; /* Adjust the padding as needed */
-  margin-bottom: 10px; /* Add spacing between inputs */
-}
-
-/* Add more spacing to the last input */
-input[type="password"] {
-  margin-bottom: 20px;
-}
 
 /* Phone Styles */
 @media (max-width: 600px) {
@@ -211,54 +146,44 @@ input[type="password"] {
     font-size: 14px;
     line-height: 1.4;
   }
-  .background {
-    max-width: 100%; /* Adjust the value as needed */
-  }
-  .white-box {
-    max-width: 100%; /* Adjust the value as needed */
-  }
-  .topnav {
-    height: auto; /* Allow the header to adjust its height as needed */
+
+  .background, .white-box {
+    max-width: 100%;
   }
 
-  .topnav a,
-  .topnav input[type="text"] {
-    padding: 10px 0; /* Increase the padding for better touch control on smaller screens */
+  .topnav {
+    height: auto;
+  }
+
+  .topnav a, .topnav input[type="text"] {
+    padding: 10px 0;
     text-align: center;
     width: 100%;
   }
 
   .topnav input[type="text"] {
-    margin-top: 0; /* Remove top margin */
-    margin-right: 0; /* Remove right margin */
+    margin-top: 0;
+    margin-right: 0;
   }
 
   button.btn {
     padding: 10px 20px;
-    margin-top: 10px; /* Increase the margin top for better spacing on smaller screens */
-  }
-
-  .centered-form,
-  .white-box {
-    padding: 10px; /* Reduce the padding for better screen utilization on smaller screens */
+    margin-top: 10px;
   }
 
   label {
-    font-size: 14px; /* Reduce font size for better readability on smaller screens */
+    font-size: 14px;
   }
 
-  input[id="username"],
-  input[type="password"],
-  textarea {
+  input[id="username"], input[type="password"], textarea {
     padding: 8px;
-    margin-bottom: 8px; /* Adjust input margin for better spacing on smaller screens */
+    margin-bottom: 8px;
   }
 }
 
-/* hamburger */
-
+/* Hamburger menu styles */
 .hamburger-menu {
-  display: none; /* Hide the button by default on larger screens */
+  display: none;
   cursor: pointer;
   padding: 10px;
 }
@@ -276,35 +201,19 @@ input[type="password"] {
     display: block;
   }
 
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {
-      height: auto;
-    }
-
-    .topnav.responsive a {
-      display: block;
-      text-align: left;
-      width: 100%;
-      padding: 14px;
-    }
-  }
-  .hamburger-content.show {
-    display: block;
-  }
   .hamburger-content {
-    display: none; /* Hide the content by default */
-    background-color: #333; /* Style the background */
-    padding: 10px; /* Add some padding for better spacing */
+    display: none;
+    background-color: #333;
+    padding: 10px;
   }
 
   .hamburger-content a {
     display: block;
-    color: #fff; /* Set the text color */
+    color: #fff;
     text-decoration: none;
-    margin: 8px 0; /* Add spacing between links */
+    margin: 8px 0;
   }
 
-  /* Show the content on smaller screens using media queries */
   @media screen and (max-width: 600px) {
     .hamburger-content {
       display: block;
