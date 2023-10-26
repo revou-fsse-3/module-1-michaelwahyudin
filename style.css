@@ -49,6 +49,14 @@ body {
   height: 50px; /* Set the desired height of the topnav bar */
   position: sticky;
   top: 0; /* Keep the header at the top when scrolling */
+  animation-name: example;
+  animation-duration: 10s;
+  animation-iteration-count: infinite
+}
+
+@keyframes example {
+  from {background-color: lightgrey;}
+  to {background-color: lightblue;}
 }
 
 .topnav a {
@@ -306,4 +314,5 @@ input[type="password"] {
     display: none;
   }
 }
+
 }
