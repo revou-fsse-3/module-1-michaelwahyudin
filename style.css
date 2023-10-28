@@ -5,6 +5,11 @@ body {
   overflow: hidden; /* Prevent horizontal scrollbars */
 }
 
+.slideshow-container .mySlides img {
+  height: 100vh;
+  object-fit: cover;
+}
+
 /* Shared styles for various elements */
 * {
   box-sizing: border-box;
@@ -240,5 +245,7 @@ input[id="username"], input[type="password"] {
       text-transform: uppercase;
       padding-top: 70%;
     }}
+
+
 
 }
