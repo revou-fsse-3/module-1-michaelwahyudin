@@ -106,6 +106,29 @@ span {
   text-transform: uppercase;
 }
 
+/* Add this CSS to your existing stylesheet */
+input[type="text"],
+input[type="password"],
+textarea {
+  transition: border-color 0.3s, box-shadow 0.3s; /* Add transition properties */
+}
+
+/* Add a hover effect for text boxes */
+input[type="text"]:hover,
+input[type="password"]:hover,
+textarea:hover {
+  border-color: #3498db; /* Change the border color on hover */
+}
+
+/* Add focus styles for text boxes */
+input[type="text"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+  border-color: #3498db; /* Change the border color on focus */
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Add a box shadow on focus */
+}
+
+
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 600px) {
   .topnav a, .topnav input[type="text"] {
