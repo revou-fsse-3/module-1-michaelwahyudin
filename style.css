@@ -28,15 +28,26 @@ body {
   height: 50px;
   position: sticky;
   top: 0;
-  animation: example 10s infinite;
+  position: relative;
+  animation-name: example2;
+  animation-duration: 4s;
+  animation-delay: -2s;
+}
+
+@keyframes example2 {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:yellow; left:200px; top:0px;}
+  50%  {background-color:blue; left:200px; top:200px;}
+  75%  {background-color:green; left:0px; top:200px;}
+  100% {background-color:red; left:0px; top:0px;}
 }
 
 @keyframes example {
   from {
-    background-color: lightgrey;
+    color: lightblue;
   }
   to {
-    background-color: lightblue;
+    color: rgb(255, 255, 255);
   }
 }
 
@@ -48,13 +59,23 @@ body {
   font-size: 17px;
 }
 
+@font-face {
+  font-family: 'CustomFont'; /* You can give your font a name */
+  src: url("./asset/Agbalumo-Regular.ttf") format("truetype");
+  font-weight: normal; /* Adjust the font-weight as needed */
+  font-style: normal; /* Adjust the font-style as needed */
+}
+
 h1 {
   margin: 0 auto;
+  font-family: 'CustomFont';
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 24px;
   color: #ffffff;
   text-transform: uppercase;
+  animation-name: example;
+  animation: example 2s infinite;
 }
 
 .topnav a:hover {
@@ -73,6 +94,16 @@ h1 {
   margin-right: 16px;
   border: none;
   font-size: 17px;
+}
+
+span {
+  margin: 0 auto;
+  font-family: 'CustomFont';
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(151, 125, 6, 0.5);
+  font-size: 18px;
+  color: #000000;
+  text-transform: uppercase;
 }
 
 /* Responsive styles for smaller screens */

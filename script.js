@@ -36,3 +36,11 @@ hamburgerMenu.addEventListener("click", () => {
     hamburgerContent.classList.remove("show"); // Remove the "show" class to hide the content
   }
 });
+
+// Add event listener to update the displayed value
+const rangeSlider = document.getElementById("myRange");
+const rangeValue = document.querySelector(".range-value");
+
+rangeSlider.addEventListener("input", function () {
+  rangeValue.textContent = rangeSlider.value;
+});

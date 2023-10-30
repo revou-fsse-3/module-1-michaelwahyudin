@@ -85,7 +85,12 @@
                   placeholder="Write your comments here..."
                   required
                 ></textarea>
-                
+                <span>User Satisfaction survey</span>
+                <div class="range-slider-container">
+                  <input type="range" id="myRange" name="myRange" min="0" max="100" step="1" required>
+                  <span class="range-value">0</span>
+                </div>
+
                 <fieldset>
                   <legend>User Type:</legend>
                   <div class="radio-group">
@@ -109,7 +114,6 @@
         </section>
       </main>
     </div>
-
     <script src="script.js"></script>
   </body>
 </html>
