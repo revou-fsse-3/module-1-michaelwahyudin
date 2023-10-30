@@ -6,4 +6,12 @@ _This is me_, visit my [Linkedin](https://www.linkedin.com/in/michael-wahyudin-9
 
 [def]: https://media.licdn.com/dms/image/C4E03AQEqHcvQ5UQ73Q/profile-displayphoto-shrink_800_800/0/1640710136892?e=1703116800&v=beta&t=ma8T5rqPhrpxIjyQFAqs_Ak5oflwQRYD9uNsmdBCVF0
 
-**This is my Checklist as Requested** ![Checklist](./asset/check.jpg)
+**This is my Checklist as Requested** !
+
+1. Apply custom font using fontface (header and survey)
+2. Apply text shadow (header and survey)
+3. Apply responsive background image (use contain cover)
+4. Apply responsive image with pic source scrset **not yet**
+5. Creating one Asymmetrical Grid **not yet**
+6. Create one advance foem element (range picker)
+7. create 2 simple animation (i use on top nav and h1 text)
