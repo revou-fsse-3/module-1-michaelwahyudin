@@ -204,17 +204,25 @@ input[id="username"], input[type="password"] {
   bottom: 0;
   max-width: 30%; /* Adjust the maximum width as needed */
   background-color: rgba(255, 255, 255, 0.5); /* Adjust the background color and opacity as needed */
-  overflow-y: scroll;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+}
+
+.asymmetrical-cell {
+  width: 50%; /* Adjust the width as needed */
+  padding: 20px;
+  background-color: lightblue;
+  box-sizing: border-box;
+  margin: 5px;
+  border: 5px solid #ccc;
 }
 
 .contained-cell {
   margin: 5px;
   padding: 20px;
   width: 100%; /* Adjust the width as needed */
-  border: 1px solid #ccc;
+  border: 5px solid #ccc;
   background-color: lightblue;
   box-sizing: border-box;
 }
@@ -348,7 +356,6 @@ input[id="username"], input[type="password"] {
       text-transform: uppercase;
       padding-top: 70%;
     }}
-
 
 
 }
