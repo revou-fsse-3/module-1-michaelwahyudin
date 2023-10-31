@@ -244,6 +244,24 @@ input[id="username"], input[type="password"] {
 
 }
 
+.night-mode .asymmetrical-cell {
+  background-color: #000; /* Change to black background for night mode */
+  color: #ff0000; /* Change text color for .contained-cell in night mode */
+
+}
+
+.night-mode .topnav {
+  background-color: #000; /* Change to black background for night mode */
+  color: #ff0000; /* Change text color for .contained-cell in night mode */
+
+}
+
+.night-mode .centered-form {
+  background-color: #000; /* Change to black background for night mode */
+  color: #ff0000; /* Change text color for .contained-cell in night mode */
+
+}
+
 .night-mode span {
   color: #ff0000; /* Change text color for span in night mode */
 }
