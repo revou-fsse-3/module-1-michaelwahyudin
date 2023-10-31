@@ -8,6 +8,11 @@
     <div class="background">
       <header>
         <div class="topnav">
+           <!-- remove dis after class -->
+          <picture>
+            <source media="(min-width:600px)" srcset="./asset/pixi.png">
+            <img src="./asset/guin.gif" alt="Flowers" style="width:auto;">
+          </picture>
           <!-- Hamburger Button -->
           <div class="hamburger-menu" id="hamburger-menu">
             <div class="bar"></div>
@@ -70,6 +75,8 @@
                   name="password"
                   placeholder="Password"
                   required
+                  minlength="8"
+                  pattern=".{8,'Password must be at least 8 characters long'}"
                 />
                 <!-- Checkboxes -->
                 <label for="checkbox1">I have read and agree to the terms of <a href="https://policies.google.com/terms?hl=en-US">service</a>.</label>
@@ -85,6 +92,7 @@
                   placeholder="Write your comments here..."
                   required
                 ></textarea>
+                 <!-- New for class remove later maybe -->
                 <span>User Satisfaction survey</span>
                 <div class="range-slider-container">
                   <input type="range" id="myRange" name="myRange" min="0" max="100" step="1" required>
