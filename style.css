@@ -223,8 +223,23 @@ input[id="username"], input[type="password"] {
 .night-mode {
   background-color: #000; /* Change this to your preferred background color */
   color: #ff0000; /* Change text color in night mode */
+  /* Add styles for the top navigation links */
+  .topnav a {
+    color: #ff0000; /* Change link text color in night mode */
+    font-weight: bolder;
+  }
+}
+
+.night-mode .contained-cell {
+  background-color: #000; /* Change to black background for night mode */
+  color: #ff0000; /* Change text color for .contained-cell in night mode */
 
 }
+
+.night-mode span {
+  color: #ff0000; /* Change text color for span in night mode */
+}
+
 
 /* Phone Styles */
 @media (max-width: 600px) {
