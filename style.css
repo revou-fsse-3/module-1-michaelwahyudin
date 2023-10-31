@@ -374,6 +374,22 @@ input[id="username"], input[type="password"] {
       text-transform: uppercase;
       padding-top: 70%;
     }}
+    
+/* Add a media query to make adjustments for smaller screens */
+@media (max-width: 600px) {
+  .grid-container {
+    flex-direction: column; /* Stack the cells vertically on small screens */
+    max-width: 100%; /* Take full width on small screens */
+  }
 
+  .contained-cell {
+    flex: 1; /* Allow the cells to take equal width */
+    margin: 5px;
+    padding: 10px; /* Adjust padding as needed */
+    border: 1px solid #ccc;
+    background-color: lightblue;
+    box-sizing: border-box;
+  }
+}
 
 }
