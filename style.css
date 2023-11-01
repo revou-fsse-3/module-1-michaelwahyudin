@@ -35,11 +35,31 @@ body {
 }
 
 @keyframes example2 {
-  0%   {background-color:red; left:0px; top:0px;}
-  25%  {background-color:yellow; left:200px; top:0px;}
-  50%  {background-color:blue; left:200px; top:200px;}
-  75%  {background-color:green; left:0px; top:200px;}
-  100% {background-color:red; left:0px; top:0px;}
+  0% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
+  25% {
+    background-color: yellow;
+    left: 200px;
+    top: 0px;
+  }
+  50% {
+    background-color: blue;
+    left: 200px;
+    top: 200px;
+  }
+  75% {
+    background-color: green;
+    left: 0px;
+    top: 200px;
+  }
+  100% {
+    background-color: red;
+    left: 0px;
+    top: 0px;
+  }
 }
 
 @keyframes example {
@@ -60,7 +80,7 @@ body {
 }
 
 @font-face {
-  font-family: 'CustomFont'; /* You can give your font a name */
+  font-family: "CustomFont"; /* You can give your font a name */
   src: url("./asset/Agbalumo-Regular.ttf") format("truetype");
   font-weight: normal; /* Adjust the font-weight as needed */
   font-style: normal; /* Adjust the font-style as needed */
@@ -68,7 +88,7 @@ body {
 
 h1 {
   margin: 0 auto;
-  font-family: 'CustomFont';
+  font-family: "CustomFont";
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   font-size: 24px;
@@ -98,7 +118,7 @@ h1 {
 
 span {
   margin: 0 auto;
-  font-family: 'CustomFont';
+  font-family: "CustomFont";
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(151, 125, 6, 0.5);
   font-size: 18px;
@@ -128,10 +148,10 @@ textarea:focus {
   box-shadow: 0 0 5px rgba(52, 152, 219, 0.5); /* Add a box shadow on focus */
 }
 
-
 /* Responsive styles for smaller screens */
 @media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type="text"] {
+  .topnav a,
+  .topnav input[type="text"] {
     float: none;
     display: block;
     text-align: left;
@@ -157,7 +177,8 @@ button.btn {
 }
 
 /* Centered form styles */
-.centered-form, .white-box {
+.centered-form,
+.white-box {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -174,14 +195,16 @@ label {
   font-weight: bold;
 }
 
-input[type="checkbox"], input[type="radio"] {
+input[type="checkbox"],
+input[type="radio"] {
   margin: 0;
   transform: scale(1.5);
   vertical-align: middle;
 }
 
 /* Input and textarea styles */
-input[id="username"], input[type="password"] {
+input[id="username"],
+input[type="password"] {
   width: 100%;
   padding: 8px;
   margin-bottom: 10px;
@@ -246,31 +269,26 @@ input[id="username"], input[type="password"] {
 .night-mode .contained-cell {
   background-color: #000; /* Change to black background for night mode */
   color: #ff0000; /* Change text color for .contained-cell in night mode */
-
 }
 
 .night-mode .asymmetrical-cell {
   background-color: #000; /* Change to black background for night mode */
   color: #ff0000; /* Change text color for .contained-cell in night mode */
-
 }
 
 .night-mode .topnav {
   background-color: #000; /* Change to black background for night mode */
   color: #ff0000; /* Change text color for .contained-cell in night mode */
-
 }
 
 .night-mode .centered-form {
   background-color: #000; /* Change to black background for night mode */
   color: #ff0000; /* Change text color for .contained-cell in night mode */
-
 }
 
 .night-mode span {
   color: #ff0000; /* Change text color for span in night mode */
 }
-
 
 /* Phone Styles */
 @media (max-width: 600px) {
@@ -280,7 +298,8 @@ input[id="username"], input[type="password"] {
     background-color: #2196f3;
   }
 
-  .background, .white-box {
+  .background,
+  .white-box {
     max-width: 100%;
   }
 
@@ -288,7 +307,8 @@ input[id="username"], input[type="password"] {
     height: auto;
   }
 
-  .topnav a, .topnav input[type="text"] {
+  .topnav a,
+  .topnav input[type="text"] {
     padding: 10px 0;
     text-align: center;
     width: 100%;
@@ -308,7 +328,9 @@ input[id="username"], input[type="password"] {
     font-size: 14px;
   }
 
-  input[id="username"], input[type="password"], textarea {
+  input[id="username"],
+  input[type="password"],
+  textarea {
     padding: 8px;
     margin-bottom: 8px;
   }
@@ -322,7 +344,6 @@ input[id="username"], input[type="password"] {
 }
 
 /* Add this media query to adjust the position for smaller screens */
-
 
 /* Adjust font size for smaller screens */
 @media screen and (max-width: 600px) {
@@ -388,23 +409,23 @@ input[id="username"], input[type="password"] {
       color: #f80101;
       text-transform: uppercase;
       padding-top: 70%;
-    }}
-    
-/* Add a media query to make adjustments for smaller screens */
-@media (max-width: 600px) {
-  .grid-container {
-    flex-direction: column; /* Stack the cells vertically on small screens */
-    max-width: 100%; /* Take full width on small screens */
+    }
   }
 
-  .contained-cell {
-    flex: 1; /* Allow the cells to take equal width */
-    margin: 5px;
-    padding: 10px; /* Adjust padding as needed */
-    border: 1px solid #ccc;
-    background-color: lightblue;
-    box-sizing: border-box;
-  }
-}
+  /* Add a media query to make adjustments for smaller screens */
+  @media (max-width: 600px) {
+    .grid-container {
+      flex-direction: column; /* Stack the cells vertically on small screens */
+      max-width: 100%; /* Take full width on small screens */
+    }
 
+    .contained-cell {
+      flex: 1; /* Allow the cells to take equal width */
+      margin: 5px;
+      padding: 10px; /* Adjust padding as needed */
+      border: 1px solid #ccc;
+      background-color: lightblue;
+      box-sizing: border-box;
+    }
+  }
 }

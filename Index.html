@@ -8,11 +8,11 @@
     <div class="background">
       <header>
         <div class="topnav">
-           <!-- remove dis after class -->
+          <!-- remove dis after class -->
           <picture>
-            <source media="(min-width:800px)" srcset="./asset/guda.gif">
-            <source media="(min-width:600px)" srcset="./asset/guin.gif">
-            <img src="./asset/fgo.gif" alt="Flowers" style="width:auto;">
+            <source media="(min-width:800px)" srcset="./asset/guda.gif" />
+            <source media="(min-width:600px)" srcset="./asset/guin.gif" />
+            <img src="./asset/fgo.gif" alt="Flowers" style="width: auto" />
           </picture>
           <!-- Hamburger Button -->
           <div class="hamburger-menu" id="hamburger-menu">
@@ -30,7 +30,7 @@
             </div>
           </div>
 
-          <a class="active" href="#index.html">Home</a>
+          <a href="#index.html">Home</a>
           <a href="https://github.com/revou-fsse-3/module-1-michaelwahyudin"
             >About</a
           >
@@ -40,20 +40,18 @@
         </div>
       </header>
       <main>
-          <!-- ass grid rmove after -->
-          <div class="grid-container">
-            <label class="asymmetrical-cell">Red</label>
-            <label for="night-mode-switch" class="contained-cell">
-              <span>Night Mode:</span>
-              <label class="switch">
-                <input type="checkbox" id="night-mode-switch">
-                <span class="slider"></span>
-              </label>
+        <!-- ass grid rmove after -->
+        <div class="grid-container">
+          <label class="asymmetrical-cell">Red</label>
+          <label for="night-mode-switch" class="contained-cell">
+            <span>Night Mode:</span>
+            <label class="switch">
+              <input type="checkbox" id="night-mode-switch" />
+              <span class="slider"></span>
             </label>
-            
-          </div>
-          
-              
+          </label>
+        </div>
+
         <div class="slideshow-container">
           <div class="mySlides fade">
             <img src="./asset/1.jpg" style="width: 100%" />
@@ -94,8 +92,18 @@
                   pattern=".{8,'Password must be at least 8 characters long'}"
                 />
                 <!-- Checkboxes -->
-                <label for="checkbox1">I have read and agree to the terms of <a href="https://policies.google.com/terms?hl=en-US">service</a>.</label>
-                <input type="checkbox" id="checkbox1" name="option1" value="option1" />
+                <label for="checkbox1"
+                  >I have read and agree to the terms of
+                  <a href="https://policies.google.com/terms?hl=en-US"
+                    >service</a
+                  >.</label
+                >
+                <input
+                  type="checkbox"
+                  id="checkbox1"
+                  name="option1"
+                  value="option1"
+                />
 
                 <!-- Text area -->
                 <label for="comments">Comments:</label>
@@ -107,21 +115,39 @@
                   placeholder="Write your comments here..."
                   required
                 ></textarea>
-                 <!-- New for class remove later maybe -->
+                <!-- New for class remove later maybe -->
                 <span>User Satisfaction survey</span>
                 <div class="range-slider-container">
-                  <input type="range" id="myRange" name="myRange" min="0" max="100" step="1" required>
+                  <input
+                    type="range"
+                    id="myRange"
+                    name="myRange"
+                    min="0"
+                    max="100"
+                    step="1"
+                    required
+                  />
                   <span class="range-value">0</span>
                 </div>
                 <fieldset>
                   <legend>User Type:</legend>
                   <div class="radio-group">
-                    <input type="radio" id="user1" name="User Type" value="user1" />
+                    <input
+                      type="radio"
+                      id="user1"
+                      name="User Type"
+                      value="user1"
+                    />
                     <label for="user1">User</label>
                   </div>
-                
+
                   <div class="radio-group">
-                    <input type="radio" id="creator" name="User Type" value="creator" />
+                    <input
+                      type="radio"
+                      id="creator"
+                      name="User Type"
+                      value="creator"
+                    />
                     <label for="creator">Creator</label>
                   </div>
                 </fieldset>

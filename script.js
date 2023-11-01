@@ -46,16 +46,16 @@ rangeSlider.addEventListener("input", function () {
 });
 
 // Get the night mode switch element
-const nightModeSwitch = document.getElementById('night-mode-switch');
+const nightModeSwitch = document.getElementById("night-mode-switch");
 
 // Add an event listener to listen for changes in the switch state
-nightModeSwitch.addEventListener('change', () => {
+nightModeSwitch.addEventListener("change", () => {
   const body = document.body;
   if (nightModeSwitch.checked) {
     // If the switch is checked, enable night mode (e.g., change background color)
-    body.classList.add('night-mode');
+    body.classList.add("night-mode");
   } else {
     // If the switch is unchecked, disable night mode
-    body.classList.remove('night-mode');
+    body.classList.remove("night-mode");
   }
 });
