@@ -322,11 +322,7 @@ input[id="username"], input[type="password"] {
 }
 
 /* Add this media query to adjust the position for smaller screens */
-@media (max-width: 600px) {
-  .centered-form, .white-box {
-    transform: translate(-50%, -30%); /* Adjust the Y-axis percentage as needed */
-  }
-}
+
 
 /* Adjust font size for smaller screens */
 @media screen and (max-width: 600px) {
