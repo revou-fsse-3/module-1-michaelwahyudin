@@ -228,7 +228,7 @@ input[type="password"] {
   max-width: 30%;
   background-color: rgba(255, 255, 255, 0.7);
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap;
   border: 1px solid #ccc;
   border-radius: 10px; /* Rounded corners for the container */
@@ -415,8 +415,9 @@ input[type="password"] {
   /* Add a media query to make adjustments for smaller screens */
   @media (max-width: 600px) {
     .grid-container {
-      flex-direction: column; /* Stack the cells vertically on small screens */
+      flex-direction: row; /* Stack the cells vertically on small screens */
       max-width: 100%; /* Take full width on small screens */
+      height: 12vh;
     }
 
     .contained-cell {
@@ -426,6 +427,83 @@ input[type="password"] {
       border: 1px solid #ccc;
       background-color: lightblue;
       box-sizing: border-box;
+      max-height: 90%;
+    }
+
+    .asymmetrical-cell {
+      flex: 1; /* Allow the cells to take equal width */
+      margin: 5px;
+      padding: 10px; /* Adjust padding as needed */
+      border: 1px solid #ccc;
+      background-color: lightblue;
+      box-sizing: border-box;
+      max-height: 90%;
+      max-width: 40%;
+    }
+
+  }
+
+/* Add this media query to make adjustments for smaller screens (e.g., mobile phones) */
+@media screen and (max-width: 600px) {
+  /* Adjust font size and padding for the white box */
+  .white-box {
+    max-height: 70vh;
+    padding: 10px;
+  }
+
+  .centered-form {
+    max-height: 75vh;
+    top: 120%;
+  }
+
+  /* Make the ID and password inputs smaller */
+  input#username,
+  input[type="password"] {
+    width: 70vw;
+    padding: 6px;
+  }
+
+  /* Make the text smaller */
+  textarea {
+    padding: 4px;
+    max-width: 70vw;
+    max-height: 70vh; 
+    display: none;
+  }
+
+  @media (max-width: 600px) {
+    .centered-form label[for="comments"] {
+      display: none;
     }
   }
+
+  /* Adjust the size of the radio buttons and labels */
+  .radio-group input[type="radio"] {
+    transform: scale(1);
+    margin-right: 5px;
+  }
+
+  /* Adjust the size of the slider container and range input */
+  .range-slider-container {
+    width: auto;
+    padding: 5px;
+  }
+
+  input[type="range"] {
+    width: 70%;
+  }
+  .range-value {
+    font-size: 14px;
+  }
+
+  .topnav input[type="text"] {
+    display: none;
+  }
+  #survey {
+    display: block; /* Change to a block-level element */
+    margin: 10px auto; /* Center it vertically between checkboxes and the slider bar */
+  }
+
+}
+
 }
